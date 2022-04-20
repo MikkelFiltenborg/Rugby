@@ -4,11 +4,22 @@
     {
         public static void Main(string[] args)
         {
-            //create string array from methos AddRugbyPlayers.
-            string[] player = Rugby_Players.AddRugbyPlayers();
+            //Array.
+            Console.WriteLine("\nArray.");
+            //create string array from methos AddRugbyPlayersArray.
+            string[] playerA = Rugby_Players.AddRugbyPlayersArray();
             
             //Call method PrintArray.
-            Tools.PrintArray(player);
+            Tools.PrintArray(playerA);
+
+            //List.
+            Console.WriteLine("\n\nList.");
+
+            //create string array from methos AddRugbyPlayersList.
+            List<string> playerL = Rugby_Players.AddRugbyPlayersList();
+
+            //Call method PrintAList.
+            Tools.PrintList(playerL);
         }
     }
 }
